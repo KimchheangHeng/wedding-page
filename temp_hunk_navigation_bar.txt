@@ -1,0 +1,62 @@
+<!-- NAVIGATION -->
+<header id="nav-header">
+    <nav id="nav-bar" class="bottom-bar outside fluid-width block-color nav-center sticky-nav animation fadeIn">
+
+        <div id="nav-wrapper">
+
+            <!-- LOGO -->
+            <div class="logo-wrapper">
+                <!-- CSS LOGO -->
+                <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '홈' });"
+                    href="index.html">
+                    <div class="css-logo rounded">
+                        <div class="css-logo-text">
+                            Y<i class="de-icon-heart-1"></i>H
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <!-- END of LOGO -->
+
+            <div id="mobile-nav">
+                <i class="de-icon-menu"></i>
+            </div>
+
+            <ul id="nav-menu" class="nav-smooth-scroll">
+                <li class="first-child">
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '처음으로' });"
+                        href="#main-slider">처음으로</a>
+                </li>
+
+                <li>
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '우리의 이야기' });"
+                        href="#our-story">우리의 이야기</a>
+                </li>
+                <li class="first-child split-margin">
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '사진첩' });"
+                        href="#gallery-section">사진첩</a>
+                </li>
+                <li>
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '결혼식 소개' });"
+                        href="#more-events">결혼식 소개</a>
+                </li>
+                <li>
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '오시는 길' });"
+                        href="#where-when">오시는 길</a>
+                </li>
+                <li>
+                    <a onclick="gtag('event', 'click', { 'event_category': 'menu', 'event_label': '마음 전하실 곳' });"
+                        href="#gift-section">마음 전하실 곳</a>
+                </li>
+
+
+
+            </ul>
+
+            <div class="clearboth"></div>
+
+        </div>
+
+    </nav>
+</header> <!-- END of NAVIGATION -->

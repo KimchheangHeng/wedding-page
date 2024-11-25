@@ -1,0 +1,45 @@
+<section id="greeting">
+<div class="container">
+                <div class="row">
+
+                    <!-- SECTION TITLE-->
+                    <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                        <div class="section-title animation fadeInUp">
+                            <h3 class="title-en">invitation</h3>
+                            <h2 class="title-kr">
+                                សូមគោរពអញ្ជើញភ្ញៀវកិត្តិយស
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- SECTION CONTENT -->
+                    <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                        <h3 class="text-center animation fadeInUp">
+                            ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី,
+                        </h3>
+                        <h3 class="text-center animation fadeInUp">
+                            អ្នកនាង កញ្ញា និងប្រិយមិត្ត
+                        </h3>
+                        <h3 class="text-center animation fadeInUp">
+                            អញ្ជើញចូលរួមជាភ្ញៀវកិតិ្តយសដើម្បីប្រសិទ្ធពរជ័យ
+                        </h3>
+                        <br>
+                        <h3 class="text-center animation fadeInUp">
+                            សិរិសួស្តី ជ័យមង្គលក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍
+                        </h3>
+                        <h3 class="text-center animation fadeInUp">
+                            របស់យើងខ្ញុំ និងពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្តទៅនៅ
+                        </h3>
+                        <h3 class="text-center animation fadeInUp">
+                            <span class="emphasize">ថ្ងៃ អាទិត្យ ទី១០ ខែវិច្ឆិកា ឆ្នាំ២០២៤វេលាម៉ោង ៥:០០ ល្ងាច</span>
+                        </h3>
+                        <h3 class="text-center animation fadeInUp">
+                            នៅ <span class="emphasize">វិមានពិភពថ្មី សែនសុខ (អាគារ F)</span> រាជធានីភ្នំពេញ
+                            ដោយមេត្រីភាព។
+                        </h3>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+</section>

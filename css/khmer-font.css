@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "KH Phanit Mision";
+    src: url("../webfonts/Kh-Phanith-Mision.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Khmer Pen-Surin Regular";
+    src: url("../webfonts/Khmer-Pen-Surin-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Kantumruy';
+    src: url('../webfonts/Kantumruy-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Battambang';
+    src: url('../webfonts/Kh-Battambang.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'KhmerOSMould';
+    src: url('../webfonts/KhmerOSmuol.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+.font-mision {
+    font-family: 'KH Phanit Mision' !important;
+}
+
+.font-pen-surin {
+    font-family: 'Khmer Pen-Surin Regular' !important;
+}
+
+.font-kantumruy {
+    font-family: 'Kantumruy' !important;
+}
+
+.font-battambang {
+    font-family: 'Battambang' !important;
+}
+
+.font-khmerosmoul {
+    font-family: 'KhmerOSMould' !important;
+}
+
+body {
+    font-family: 'Kantumruy';
+}
+
+.invitation {
+    text-align: center;
+}
+
+.invitation h2 {
+    font-size: 40px;
+}
+
+.invitation p {
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+
+    .invitation h2 {
+        font-size: 40px;
+    }
+
+    .invitation p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .invitation h2 {
+        font-size: 30px;
+    }
+
+    .invitation p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .invitation h2 {
+        font-size: 25px;
+    }
+
+    .invitation p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .invitation h2 {
+        font-size: 24px;
+    }
+
+    .invitation p {
+        font-size: 16px;
+    }
+}
