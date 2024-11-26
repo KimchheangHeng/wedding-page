@@ -43,3 +43,33 @@
                 </div>
             </div>
 </section>
+
+  <!-- PHOTO DIVIDER -->
+        <section id="dont-miss-it">
+            <div class="image-divider auto-height"
+                style="background-image: url('images/divider/divider-1.jpg'); background-position: 100% 60%;height:600px;"
+                data-stellar-background-ratio="0.3">
+                <div class="divider-overlay"></div>
+
+                <div class=" container"></div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 text-center animation fadeInUp">
+                        <h3 class="title-en" style="opacity: 0.5;">d-day</h3>
+                        <h2 id="dont-miss-it-title">គីមឈាង<i class="de-icon-heart pink-heart"></i>&nbsp;ម៉ានីត</h2>
+                        <h2 id="dont-miss-it-title">រាប់ថយក្រោយរហូតដល់ពិធីមង្គលការ</h2>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div id="dday-countdown" class="simple-countdown animation fadeInUp"></div>
+                        <div id="date-countdown" class="simple-countdown animation fadeInUp"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+

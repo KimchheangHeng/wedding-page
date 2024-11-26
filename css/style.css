@@ -3026,6 +3026,23 @@ footer .image-divider.fixed-height{
 	color:#FFF;
 }
 
+.story-timeline-location {
+	font-size: 14px;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 15px;
+	color: #8ab1d2;
+}
+
+#our-story p {
+	margin-bottom: 6px;
+}
+
+#our-story h3 {
+	line-height: 2;
+	
+}
+
 .arrow-right {
 	width: 0; 
 	height: 0; 
@@ -4495,7 +4512,7 @@ p{
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 #our-story{
-	padding: 60px 5px 40px 5px;
+	padding: 15px 5px 40px 5px;
 }
 
 #end-of-story{
