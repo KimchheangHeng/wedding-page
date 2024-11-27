@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # Define the folder paths
-input_folder = "story"
-output_folder = "story_webp"
+input_folder = "untitled-folder"
+output_folder = "patterns"
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
