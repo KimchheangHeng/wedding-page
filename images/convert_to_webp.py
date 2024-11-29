@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 # Define the folder paths
-input_folder = "divider"
+input_folder = "divider/divider2"
 output_folder = "divider_webp"
 
 # Create output folder if it doesn't exist
