@@ -476,6 +476,25 @@ $(document).ready(function () {
 		},
 	});
 
+	// 13.3 Magnific Zoom YouTube
+	//----------------------------------------------------------------------------------	
+	$('.magnific-zoom-youtube').magnificPopup({
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		iframe: {
+			patterns: {
+				youtube: {
+					index: 'youtube.com',
+					id: 'v=',
+					src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+				},
+			},
+		},
+		srcAction: 'iframe_src'
+	});
+
 	// 13.2 Magnific Zoom Gallery
 	//----------------------------------------------------------------------------------	
 	$('.magnific-zoom-gallery').magnificPopup({
@@ -518,6 +537,8 @@ $(document).ready(function () {
 			}
 		},
 	});
+
+
 
 	// 14. DISALBE TRANSITION (Mobile / Tablet)
 	//==================================================================================

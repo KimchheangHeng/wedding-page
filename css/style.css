@@ -2020,12 +2020,17 @@ a:hover .de-icon.effect3{
 /*===============================================*/
 .photo-item {
 	position:relative;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 .photo-item.frame-border {
 	background-color:transparent;
-	border-radius: 10px; 
+	border-radius: 20px; 
+}
+
+.photo-item.circle-border {
+	background-color:transparent;
+	border-radius: 50%; 
 }
 
 /* ----------------------------------------------*/
@@ -2825,14 +2830,14 @@ footer .image-divider.fixed-height{
 	font-family: 'Khmer Pen-Surin Regular';
 	font-size: 60px;
 	font-weight: 600;
-	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #banner-name{
 	font-family: 'Khmer Pen-Surin Regular';
 	font-size: 40px;
 	font-weight: 500;
-	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 	
 }
 
@@ -2848,7 +2853,7 @@ footer .image-divider.fixed-height{
 	font-family: 'Khmer Pen-Surin Regular'; 
 	font-weight: 500;
 	font-size: 30px;
-	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -2983,7 +2988,7 @@ footer .image-divider.fixed-height{
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 #our-story{
-	padding: 140px 0;
+	padding: 80px 0;
 }
 
 .story-row.row {
@@ -3154,7 +3159,7 @@ footer .image-divider.fixed-height{
 /* 14.5 Gallery Section							 */
 /* ----------------------------------------------*/
 #gallery-section{
-	padding: 140px 0;
+	padding: 80px 0;
 }
 
 #gallery-section .photo-item{
@@ -4521,6 +4526,11 @@ p{
     
 #end-of-story h2{
     font-size: 21px;
+}
+
+
+#video-section{
+	padding: 80px 0;
 }
 
 /* ----------------------------------------------*/
