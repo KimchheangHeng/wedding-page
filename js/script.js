@@ -538,6 +538,30 @@ $(document).ready(function () {
 		},
 	});
 
+	// Listen for key press event
+    $(document).on('keydown', function(event) {
+		const key = event.key;
+		
+        if (key === 'a' || key === 'A') {
+            // Trigger the popup
+            $.magnificPopup.open({
+				items: {	
+					src: '<div class="white-popup"><img src="images/khqr_khr.jpg" alt="Khmer Riels"></div>',
+					type: 'inline'
+				}
+			});
+        }
+		else if (key === 'b' || key === 'B') {
+			// Trigger the popup
+			$.magnificPopup.open({
+				items: {	
+					src: '<div class="white-popup"><img src="images/khqr_usd.jpg" alt="US Dollar""></div>',
+					type: 'inline'
+				}
+			});
+		}
+    });	
+
 
 
 	// 14. DISALBE TRANSITION (Mobile / Tablet)

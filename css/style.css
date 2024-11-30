@@ -4713,39 +4713,11 @@ h2#dont-miss-it-title{
 /* ----------------------------------------------*/
 /* 12.5 Footer Section				 			 */
 /* ----------------------------------------------*/
-#thank-you-kr{
-	font-size: 18px;
+.thank-you-letter {
+	padding: 15px;
+	background: #fff;
 }
-
-#footer-couple-name{
-	font-size: 14px;
 }
-
-#kakao-link-btn{
-	font-size: 13px;
-	padding: 20px 30px;
-}
-
-#kakao-link-btn img{
-	width: 17px;
-	height: auto;
-	margin-right: 3px;
-}
-
-#thank{
-	font-size:45px; 
-	line-height:35px
-}
-
-#you{
-	font-size:45px; 
-	line-height:35px;
-}
-
-
-
-}
-
 
 @media screen and (max-width: 320px) {
 /*===============================================*/

@@ -23,11 +23,7 @@ $(document).ready(function() {
 	
 	$("#menu-icon, #sticky-menuicon a").click(function(e){
 		e.preventDefault();
-	});
-	
-	
-		
-			
+	});	
 });
 			 
 			
