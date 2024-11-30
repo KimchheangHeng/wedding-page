@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # Define the folder paths
-input_folder = "divider/divider2"
-output_folder = "divider_webp"
+input_folder = "og"
+output_folder = "og_webp"
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
