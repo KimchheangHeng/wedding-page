@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # Define the folder paths
-input_folder = "og"
-output_folder = "og_webp"
+input_folder = "qrcode"
+output_folder = "qrcode_webp"
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)

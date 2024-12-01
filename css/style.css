@@ -3468,6 +3468,26 @@ button.mfp-close, button.mfp-arrow {
   	z-index: 2003;
 }
 
+.white-popup {
+    position: fixed; /* Fixed position for popup */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.white-popup img {
+    display: block; /* Remove inline spacing issues */
+    width: 80vw; /* Set width based on viewport width */
+    height: 80vw; /* Set height equal to width to make it a square */
+    max-width: 80vh; /* Limit width to 80% of viewport height for landscape */
+    max-height: 80vh; /* Ensure the image doesn't exceed viewport height */
+    object-fit: cover; /* Ensures the image fills the square area */
+}
+
 /*===============================================*/
 /* 16. MEDIA SCREEN		 						 */
 /*===============================================*/

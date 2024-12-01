@@ -512,7 +512,7 @@ $(document).ready(function () {
 				// Will fire when this exact popup is opened
 			},
 			afterClose: function () {
-				// Will fire when popup is closed
+				// Will fire when popup is closeda
 			}
 		},
 	});
@@ -541,12 +541,12 @@ $(document).ready(function () {
 	// Listen for key press event
     $(document).on('keydown', function(event) {
 		const key = event.key;
-		
+
         if (key === 'a' || key === 'A') {
             // Trigger the popup
             $.magnificPopup.open({
 				items: {	
-					src: '<div class="white-popup"><img src="images/khqr_khr.jpg" alt="Khmer Riels"></div>',
+					src: '<div class="white-popup"><img src="images/qrcode/khr.webp" alt="Khmer Riels"></div>',
 					type: 'inline'
 				}
 			});
@@ -555,7 +555,7 @@ $(document).ready(function () {
 			// Trigger the popup
 			$.magnificPopup.open({
 				items: {	
-					src: '<div class="white-popup"><img src="images/khqr_usd.jpg" alt="US Dollar""></div>',
+					src: '<div class="white-popup"><img src="images/qrcode/usd.webp" alt="US Dollar""></div>',
 					type: 'inline'
 				}
 			});
