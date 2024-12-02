@@ -3003,6 +3003,10 @@ footer .image-divider.fixed-height{
     vertical-align: middle;
 }
 
+.story-row p {
+	font-family: 'Kantumruy' !important;
+}
+
 .story-date-wrapper{
 	z-index:1;
 }
@@ -3032,7 +3036,8 @@ footer .image-divider.fixed-height{
 }
 
 .story-timeline-location {
-	font-size: 14px;
+	font-family: 'Kantumruy' !important;
+	font-size: 16px;
 	font-weight: 500;
 	display: block;
 	margin-bottom: 15px;

@@ -58,13 +58,7 @@
 <body class="outside-bottom-bar-page">
     <!-- MAIN SLIDER -->
     <section id="main-slider" class="flexslider fullscreen">
-        <!-- Splash Screen -->
-        <!-- <div id="splash-screen">
-            <div class="splash-content">
-                <img src="images/loading.webp" alt="Loading...">
-            </div>
-        </div> -->
-
+        
         <!-- MAIN SLIDER TITLE OUTER WRAPPER -->
         <div class="slide-title-outter-wrapper">
 
@@ -180,7 +174,6 @@
                     <!-- SECTION TITLE -->
                     <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
                         <div class="section-title animation fadeInUp">
-                            <div class="section-title-simg"><img src="images/section-title.png" alt=""></div>
                             <h3 class="title-en">Wedding agenda</h3>
                             <h2 class="font-pen-surin">កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍</h2>
                         </div>
@@ -233,7 +226,7 @@
                         <div class="clearboth"></div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4 font-kantumruy animation delay1 fadeInRight">
+                    <div class="col-sm-12 col-md-4 animation delay1 fadeInRight">
                         <h3 class="font-khmerosmoul">ថ្ងៃសុក្រ ទី១៣ ខែធ្នូ ឆ្នាំ២០២៤</h3>
                         <span class="story-timeline-location">គេហដ្ឋានខាងប្រុស</span>
                         <p><b>ម៉ោង២:៣០</b> រសៀល ពិធីក្រុងពាលី</p>
@@ -293,7 +286,7 @@
                     </div>
 
 
-                    <div class="col-sm-12 col-md-4 col-md-pull-6 font-kantumruy animation delay1 fadeInRight">
+                    <div class="col-sm-12 col-md-4 col-md-pull-6 animation delay1 fadeInRight">
                         <h3 class="font-khmerosmoul">ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៤</h3>
                         <span class="story-timeline-location">វិមានពិភពថ្មីសែនសុខ (អាគារ F)</span>
                         <p><b>ម៉ោង៦:៣០ ព្រឹក</b> ជួបជុំភ្ញៀវកិត្តិយស បងប្អូនញាតិមិត្ត ដើម្បីរៀបចំហែរជំនូន</p>
@@ -353,7 +346,7 @@
                         <div class="clearboth"></div>
                     </div>
 
-                    <div class="col-md-4 font-kantumruy animation delay1 fadeInRight">
+                    <div class="col-md-4 animation delay1 fadeInRight">
                         <h3 class="font-khmerosmoul">ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៤</h3>
                         <span class="story-timeline-location">វិមានពិភពថ្មីសែនសុខ (អាគារ F)</span>
                         <p><b>ម៉ោង៨:៣០ ព្រឹក</b> ពិធីបំពាក់ចិញ្ចៀន</p>
@@ -415,7 +408,7 @@
                         <div class="clearboth"></div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4 col-md-pull-6 font-kantumruy animation delay1 fadeInRight">
+                    <div class="col-sm-12 col-md-4 col-md-pull-6 animation delay1 fadeInRight">
                         <h3 class="font-khmerosmoul">ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៤</h3>
                         <p>អញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ <b>នៅវិមានពិភពថ្មីសែនសុខ (អាគារ F)</b> ចាប់ពី <b>ម៉ោង៥:៣០
                                 ល្ងាច
@@ -436,7 +429,6 @@
                 <!-- SECTION TITLE -->
                 <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
                     <div class="section-title animation fadeInUp">
-                        <div class="section-title-simg"><img src="images/section-title.png" alt=""></div>
                         <h3 class="title-en">Our pre-wedding video</h3>
                         <h2 class="font-pen-surin">កម្រងវីដេអូអនុស្សាវរីយ៍</h2>
                     </div>
@@ -998,57 +990,11 @@
     <script src="js/jquery.scrolldepth.min.js"></script>
 
     <script>
-        window.addEventListener('load', function () {
-            var splashScreen = document.getElementById('splash-screen');
-            var gifDuration = 2000; // Set the duration of the GIF in milliseconds
-
-            setTimeout(function () {
-                splashScreen.classList.add('hidden');
-            }, gifDuration);
-        });
-    </script>
-
-    <script>
         jQuery(function () {
             jQuery.scrollDepth({
                 gaGlobal: true
             });
         });
-    </script>
-
-    <!-- GIFT SECTION ACCORDION -->
-    <script>
-        var acc = document.getElementsByClassName("accordion1");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel1 = this.nextElementSibling;
-                if (panel1.style.maxHeight) {
-                    panel1.style.maxHeight = null;
-                } else {
-                    panel1.style.maxHeight = panel1.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion2");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel2 = this.nextElementSibling;
-                if (panel2.style.maxHeight) {
-                    panel2.style.maxHeight = null;
-                } else {
-                    panel2.style.maxHeight = panel2.scrollHeight + "px";
-                }
-            });
-        }
     </script>
 </body>
 
