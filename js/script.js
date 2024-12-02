@@ -589,25 +589,71 @@ $(document).ready(function () {
 		}
 	});
 
+	// // Initialize WebSocket connection
+	// let ws = new WebSocket("ws://127.0.0.1:8000/ws"); // Replace with your Raspberry Pi's IP
+	
+	// ws.onopen = () => {
+	// 	console.log("WebSocket connection established");
+	// };
+
+	// // Handle incoming WebSocket messages
+	// ws.onmessage = (event) => {
+	// 	console.log("WebSocket Message:", event.data);
+	// 	const message = event.data.toLowerCase(); // Normalize message to lowercase
+	// 	const mode = getCurrencyMode(message);
+
+	// 	if (mode) {
+	// 		handlePopup(mode);
+	// 	}
+	// };
+
+	// ws.onerror = (error) => {
+	// 	console.error("WebSocket Error:", error);
+	// };
+	// ws.onclose = () => {
+	// 	console.warn("WebSocket connection closed.");
+	// };
+
+
 	// Initialize WebSocket connection
-	let ws = new WebSocket("ws://raspberrypi.local:6789"); // Replace with your Raspberry Pi's IP
+	let ws = new WebSocket("ws://localhost:8000/ws"); // Replace with your Raspberry Pi's IP
+
+	ws.onopen = () => {
+		console.log("WebSocket connection established");
+		// Send a test message to the server after connection is established
+		ws.send("Hello Server!");
+	};
+
+	ws.addEventListener('open', () => {
+		print("WebSocket connection established");
+	});
 
 	// Handle incoming WebSocket messages
 	ws.onmessage = (event) => {
+		console.log("WebSocket Message:", event.data);
 		const message = event.data.toLowerCase(); // Normalize message to lowercase
-		const mode = getCurrencyMode(message);
+		const mode = getCurrencyMode(message);  // Your logic to handle the message
 
 		if (mode) {
-			handlePopup(mode);
+			handlePopup(mode);  // Call your function to display the popup
 		}
 	};
 
 	ws.onerror = (error) => {
 		console.error("WebSocket Error:", error);
 	};
+
 	ws.onclose = () => {
 		console.warn("WebSocket connection closed.");
 	};
+
+	const message = "Hello from client!";
+    if (ws.readyState === WebSocket.OPEN) {
+        console.log("Sending message:", message);
+        ws.send(message);
+    } else {
+        console.error("WebSocket is not open.");
+    }
 
 
 
