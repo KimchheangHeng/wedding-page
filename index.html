@@ -996,6 +996,60 @@
             });
         });
     </script>
+
+    <script src="js/khqr-popup.js"></script>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            const key = event.key.toLowerCase(); // Normalize to lowercase
+            const mode = getCurrencyMode(key);
+
+            if (mode) {
+                handlePopup(mode);
+            }
+        });
+   
+        // Initialize WebSocket connection
+        let ws = new WebSocket("ws://localhost:8000/ws"); // Replace with your Raspberry Pi's IP
+
+        ws.onopen = () => {
+            console.log("WebSocket connection established");
+            // Send a test message to the server after connection is established
+            ws.send("Hello Server!");
+        };
+
+        // Handle incoming WebSocket messages
+        ws.onmessage = (event) => {
+            console.log("WebSocket Message:", event.data);
+            const message = event.data.toLowerCase(); // Normalize message to lowercase)
+            const mode = getCurrencyMode(message);  // Your logic to handle the message
+
+            if (mode) {
+                handlePopup(mode);  // Call your function to display the popup
+            }
+        };
+
+        ws.onerror = (error) => {
+            console.error("WebSocket Error:", error);
+        };
+
+        ws.onclose = () => {
+            console.warn("WebSocket connection closed.");
+        };
+
+        // Function to send a message
+        function sendMessage(message) {
+            if (ws.readyState === WebSocket.OPEN) {
+                console.log("Sending message:", message);
+                ws.send(message);
+            } else {
+                console.error("WebSocket is not open.");
+            }
+        }
+
+        // Example usage of sendMessage function
+        const message = "Hello from client!";
+        sendMessage(message);
+    </script>
 </body>
 
 </html>
