@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta property="og:title" content="សូមគោរពអញ្ជើញភ្ញៀវកិត្តិយស" />
     <meta property="og:url" content="https://kimchheangheng.github.io/wedding-page" />
     <meta property="og:description" content="ថ្ងៃសៅរ៍ ទី១៤ ខែធ្នូ ឆ្នាំ២០២៤" />
@@ -1009,7 +1010,7 @@
         });
    
         // Initialize WebSocket connection
-        let ws = new WebSocket("ws://localhost:8000/ws"); // Replace with your Raspberry Pi's IP
+        let ws = new WebSocket("ws://raspberrypi.local:8000/ws"); // Replace with your Raspberry Pi's IP
 
         ws.onopen = () => {
             console.log("WebSocket connection established");
